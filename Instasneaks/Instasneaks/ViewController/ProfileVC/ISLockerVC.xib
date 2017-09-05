@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="NeoSansPro.ttf">
+            <string>NeoSansPro-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ISLockerVC">
+            <connections>
+                <outlet property="collectionView_collectionsItem" destination="BtJ-fN-79B" id="NQn-sS-R6l"/>
+                <outlet property="noItemLbl" destination="cRg-bD-we6" id="K2I-3m-Ggj"/>
+                <outlet property="noItemView" destination="jWe-m0-493" id="hZ6-uc-BQT"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="BtJ-fN-79B">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="YxG-25-t7q">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Jez-Aa-S0r"/>
+                        <outlet property="delegate" destination="-1" id="Vxf-9w-hcn"/>
+                    </connections>
+                </collectionView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jWe-m0-493">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ico_hasnotupload_illustration@2x.png" translatesAutoresizingMaskIntoConstraints="NO" id="ac1-9U-nLW">
+                            <rect key="frame" x="250" y="15" width="100" height="100"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="100" id="Bhl-2M-9Oz"/>
+                                <constraint firstAttribute="height" constant="100" id="DeX-qy-ptR"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cRg-bD-we6">
+                            <rect key="frame" x="20" y="125" width="560" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="eZb-zJ-Zj8"/>
+                            </constraints>
+                            <string key="text">You haven't  purchased any items yet,
+pick up some dope gear</string>
+                            <fontDescription key="fontDescription" name="NeoSansPro-Regular" family="Neo Sans Pro" pointSize="14"/>
+                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="cRg-bD-we6" firstAttribute="top" secondItem="ac1-9U-nLW" secondAttribute="bottom" constant="10" id="4oW-4R-4An"/>
+                        <constraint firstItem="ac1-9U-nLW" firstAttribute="top" secondItem="jWe-m0-493" secondAttribute="top" constant="15" id="9S9-rn-Kf5"/>
+                        <constraint firstItem="ac1-9U-nLW" firstAttribute="centerX" secondItem="jWe-m0-493" secondAttribute="centerX" id="MOZ-Ji-VHl"/>
+                        <constraint firstAttribute="trailing" secondItem="cRg-bD-we6" secondAttribute="trailing" constant="20" id="azH-3N-Qsx"/>
+                        <constraint firstItem="cRg-bD-we6" firstAttribute="leading" secondItem="jWe-m0-493" secondAttribute="leading" constant="20" id="kbj-Cj-5QQ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="jWe-m0-493" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="7AG-RC-Va8"/>
+                <constraint firstAttribute="bottom" secondItem="BtJ-fN-79B" secondAttribute="bottom" id="I74-bB-qop"/>
+                <constraint firstItem="BtJ-fN-79B" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="L2K-Ta-PhY"/>
+                <constraint firstItem="jWe-m0-493" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="QyQ-C1-6kW"/>
+                <constraint firstItem="BtJ-fN-79B" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="TMi-XJ-8lR"/>
+                <constraint firstAttribute="trailing" secondItem="jWe-m0-493" secondAttribute="trailing" id="hXM-3Y-2dn"/>
+                <constraint firstAttribute="trailing" secondItem="BtJ-fN-79B" secondAttribute="trailing" id="pGF-hl-Dgg"/>
+                <constraint firstAttribute="bottom" secondItem="jWe-m0-493" secondAttribute="bottom" id="tWL-zp-kEg"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="ico_hasnotupload_illustration@2x.png" width="80" height="80"/>
+    </resources>
+</document>

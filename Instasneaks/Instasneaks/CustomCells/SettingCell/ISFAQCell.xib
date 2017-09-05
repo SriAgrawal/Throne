@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="NeoSansPro-Medium.ttf">
+            <string>NeoSansPro-Medium</string>
+        </mutableArray>
+        <mutableArray key="NeoSansPro.ttf">
+            <string>NeoSansPro-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="faqCell" rowHeight="90" id="KGk-i7-Jjw" customClass="ISFAQCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="90"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="89"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4K4-Z9-6lt">
+                        <rect key="frame" x="16" y="30" width="298" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="lR2-QV-dKK"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="NeoSansPro-Medium" family="Neo Sans Pro" pointSize="17"/>
+                        <color key="textColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1yR-8P-q17">
+                        <rect key="frame" x="16" y="60" width="298" height="21"/>
+                        <fontDescription key="fontDescription" name="NeoSansPro-Regular" family="Neo Sans Pro" pointSize="15"/>
+                        <color key="textColor" white="0.5" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="4K4-Z9-6lt" secondAttribute="trailing" constant="6" id="HxP-jw-2pY"/>
+                    <constraint firstAttribute="bottom" secondItem="1yR-8P-q17" secondAttribute="bottom" constant="8" id="JUU-wC-iJ3"/>
+                    <constraint firstItem="4K4-Z9-6lt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="USy-HE-sr5"/>
+                    <constraint firstAttribute="trailing" secondItem="1yR-8P-q17" secondAttribute="trailing" constant="6" id="Vmd-Qy-Z1i"/>
+                    <constraint firstItem="1yR-8P-q17" firstAttribute="top" secondItem="4K4-Z9-6lt" secondAttribute="bottom" constant="9" id="oWT-19-w20"/>
+                    <constraint firstItem="1yR-8P-q17" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="u7s-oU-NOE"/>
+                    <constraint firstItem="4K4-Z9-6lt" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="30" id="zD8-xJ-Eye"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="label_detail" destination="1yR-8P-q17" id="TQX-eS-h1N"/>
+                <outlet property="label_title" destination="4K4-Z9-6lt" id="u2j-z2-d7r"/>
+            </connections>
+            <point key="canvasLocation" x="332" y="336"/>
+        </tableViewCell>
+    </objects>
+</document>

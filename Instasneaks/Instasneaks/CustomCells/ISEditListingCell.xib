@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="NeoSansPro.ttf">
+            <string>NeoSansPro-Regular</string>
+            <string>NeoSansPro-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="ISEditListingCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="55"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="54"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="6pd-ve-QIy">
+                        <rect key="frame" x="12" y="5" width="351" height="45"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wza-VS-IyR">
+                                <rect key="frame" x="15" y="0.0" width="38" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="zwa-kl-c4U"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="NeoSansPro-Regular" family="Neo Sans Pro" pointSize="16"/>
+                                <color key="textColor" red="0.47450980390000003" green="0.50196078430000002" blue="0.52549019610000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WjT-nG-kGI">
+                                <rect key="frame" x="213" y="0.0" width="100" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="8ad-Oa-cki"/>
+                                    <constraint firstAttribute="width" constant="100" id="SQX-UO-gGy"/>
+                                </constraints>
+                                <color key="textColor" red="0.47450980390000003" green="0.50196078430000002" blue="0.52549019610000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="NeoSansPro-Regular" family="Neo Sans Pro" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="-1" id="lDc-NK-hFs"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XKH-P4-pTp">
+                                <rect key="frame" x="323" y="10" width="25" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="Wpx-hN-Ag5"/>
+                                    <constraint firstAttribute="width" constant="25" id="uJ2-zP-StW"/>
+                                </constraints>
+                                <state key="normal" image="ico_disclosure_down">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="WjT-nG-kGI" firstAttribute="top" secondItem="6pd-ve-QIy" secondAttribute="top" id="5B3-DR-qou"/>
+                            <constraint firstAttribute="trailing" secondItem="WjT-nG-kGI" secondAttribute="trailing" constant="38" id="CgU-PQ-Q1N"/>
+                            <constraint firstAttribute="trailing" secondItem="XKH-P4-pTp" secondAttribute="trailing" constant="3" id="WSX-lm-bxj"/>
+                            <constraint firstItem="XKH-P4-pTp" firstAttribute="top" secondItem="6pd-ve-QIy" secondAttribute="top" constant="10" id="lbN-WC-V8J"/>
+                            <constraint firstItem="wza-VS-IyR" firstAttribute="top" secondItem="6pd-ve-QIy" secondAttribute="top" id="qch-QL-BKJ"/>
+                            <constraint firstItem="wza-VS-IyR" firstAttribute="leading" secondItem="6pd-ve-QIy" secondAttribute="leading" constant="15" id="sb0-VT-GH6"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" red="0.88235294119999996" green="0.88235294119999996" blue="0.90588235289999997" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="corner">
+                                <real key="value" value="3"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="6pd-ve-QIy" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="3Xv-1X-GJe"/>
+                    <constraint firstAttribute="bottom" secondItem="6pd-ve-QIy" secondAttribute="bottom" constant="4" id="FHN-K2-OYQ"/>
+                    <constraint firstAttribute="trailing" secondItem="6pd-ve-QIy" secondAttribute="trailing" constant="12" id="Oni-5n-xlq"/>
+                    <constraint firstItem="6pd-ve-QIy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="V6P-M8-ojr"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="containerView" destination="6pd-ve-QIy" id="c3P-bb-YqU"/>
+                <outlet property="drownImageBtn" destination="XKH-P4-pTp" id="JWy-D1-j6Q"/>
+                <outlet property="editTextConstraints" destination="CgU-PQ-Q1N" id="Diz-xs-xxO"/>
+                <outlet property="editTxtField" destination="WjT-nG-kGI" id="eY8-Dj-dup"/>
+                <outlet property="placeHolderLbl" destination="wza-VS-IyR" id="9GA-43-zKn"/>
+            </connections>
+            <point key="canvasLocation" x="324.5" y="297.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ico_disclosure_down" width="10" height="6"/>
+    </resources>
+</document>

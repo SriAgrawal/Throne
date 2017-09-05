@@ -1,0 +1,23 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, '7.0'
+# Uncomment this line if you're using Swift
+use_frameworks!
+
+target 'Instasneaks' do
+
+pod 'FBSDKCoreKit'
+pod 'FBSDKLoginKit'
+pod ‘FBSDKShareKit’
+pod 'AFNetworking', '~> 2.0’
+pod 'Fabric'
+pod 'TwitterKit'
+pod 'TwitterCore'
+pod 'DACircularProgress'
+pod 'SDWebImage'
+pod 'SYPhotoBrowser'
+pod "Branch"
+pod 'Braintree'
+pod 'Mixpanel'
+pod ‘HelpStack’
+end
+

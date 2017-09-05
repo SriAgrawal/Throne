@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="NeoSansPro.ttf">
+            <string>NeoSansPro-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ISHelpFAQVC">
+            <connections>
+                <outlet property="helpFaqTableView" destination="QGp-FY-IiV" id="9i0-3M-QL0"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AcL-co-pvx">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="64"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xAG-Tj-EIk">
+                            <rect key="frame" x="10" y="20" width="70" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="70" id="8tP-uz-78D"/>
+                                <constraint firstAttribute="height" constant="44" id="EXE-q3-3pN"/>
+                            </constraints>
+                            <state key="normal" image="ico_back"/>
+                            <connections>
+                                <action selector="backAction:" destination="-1" eventType="touchUpInside" id="sna-rP-wdr"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HELP &amp; FAQ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pqe-WY-S3S">
+                            <rect key="frame" x="209" y="20" width="182" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="182" id="4PR-8L-Yvk"/>
+                                <constraint firstAttribute="height" constant="44" id="8ku-lH-Di5"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="NeoSansPro-Regular" family="Neo Sans Pro" pointSize="18"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TFF-sP-ytc">
+                            <rect key="frame" x="0.0" y="63" width="600" height="1"/>
+                            <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="HDO-qf-ld6"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="pqe-WY-S3S" firstAttribute="top" secondItem="AcL-co-pvx" secondAttribute="top" constant="20" id="44J-Wq-qyn"/>
+                        <constraint firstItem="TFF-sP-ytc" firstAttribute="top" secondItem="AcL-co-pvx" secondAttribute="top" constant="63" id="7sM-T5-0TW"/>
+                        <constraint firstItem="xAG-Tj-EIk" firstAttribute="leading" secondItem="AcL-co-pvx" secondAttribute="leading" constant="10" id="995-ng-3NF"/>
+                        <constraint firstItem="TFF-sP-ytc" firstAttribute="leading" secondItem="AcL-co-pvx" secondAttribute="leading" id="9u2-g6-l9t"/>
+                        <constraint firstItem="pqe-WY-S3S" firstAttribute="centerX" secondItem="AcL-co-pvx" secondAttribute="centerX" id="cfp-cX-cYp"/>
+                        <constraint firstAttribute="trailing" secondItem="TFF-sP-ytc" secondAttribute="trailing" id="otK-oV-QGl"/>
+                        <constraint firstAttribute="height" constant="64" id="wbe-L0-nld"/>
+                        <constraint firstItem="xAG-Tj-EIk" firstAttribute="top" secondItem="AcL-co-pvx" secondAttribute="top" constant="20" id="yFt-js-49t"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="QGp-FY-IiV">
+                    <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="wIC-w8-iwW"/>
+                        <outlet property="delegate" destination="-1" id="VkL-UK-e54"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="QGp-FY-IiV" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="LFB-pt-l0v"/>
+                <constraint firstItem="QGp-FY-IiV" firstAttribute="top" secondItem="AcL-co-pvx" secondAttribute="bottom" id="Rzc-og-CiG"/>
+                <constraint firstAttribute="trailing" secondItem="AcL-co-pvx" secondAttribute="trailing" id="Wt6-5i-RoV"/>
+                <constraint firstItem="AcL-co-pvx" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="eKq-di-8NM"/>
+                <constraint firstAttribute="bottom" secondItem="QGp-FY-IiV" secondAttribute="bottom" id="lD4-BE-esE"/>
+                <constraint firstAttribute="trailing" secondItem="QGp-FY-IiV" secondAttribute="trailing" id="stZ-JZ-Y4u"/>
+                <constraint firstItem="AcL-co-pvx" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="vfV-wF-Hit"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="ico_back" width="20" height="16"/>
+    </resources>
+</document>

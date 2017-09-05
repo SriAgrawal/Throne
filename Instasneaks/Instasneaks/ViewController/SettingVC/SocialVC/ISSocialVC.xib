@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="NeoSansPro.ttf">
+            <string>NeoSansPro-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ISSocialVC">
+            <connections>
+                <outlet property="socialTableView" destination="eIt-eR-EBH" id="Wjn-Wa-ilM"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MQE-Se-WGe">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="64"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="46r-qi-pZ8">
+                            <rect key="frame" x="0.0" y="20" width="40" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="BB0-68-18A"/>
+                                <constraint firstAttribute="height" constant="44" id="iHF-gj-3RX"/>
+                            </constraints>
+                            <state key="normal" image="ico_back"/>
+                            <connections>
+                                <action selector="backAction:" destination="-1" eventType="touchUpInside" id="meJ-YS-o7E"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SOCIAL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1LG-1P-Cro">
+                            <rect key="frame" x="40" y="22" width="520" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="daa-wz-EyG"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="NeoSansPro-Regular" family="Neo Sans Pro" pointSize="18"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="1LG-1P-Cro" firstAttribute="top" secondItem="MQE-Se-WGe" secondAttribute="top" constant="22" id="8f9-yz-5Fz"/>
+                        <constraint firstAttribute="trailing" secondItem="1LG-1P-Cro" secondAttribute="trailing" constant="40" id="Nnl-JW-0FU"/>
+                        <constraint firstItem="46r-qi-pZ8" firstAttribute="leading" secondItem="MQE-Se-WGe" secondAttribute="leading" id="VPj-YK-a1m"/>
+                        <constraint firstItem="1LG-1P-Cro" firstAttribute="leading" secondItem="MQE-Se-WGe" secondAttribute="leading" constant="40" id="i7Y-eN-6Em"/>
+                        <constraint firstItem="46r-qi-pZ8" firstAttribute="top" secondItem="MQE-Se-WGe" secondAttribute="top" constant="20" id="q4S-fp-bIg"/>
+                        <constraint firstAttribute="height" constant="64" id="wuh-dd-3rQ"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DY0-wR-BSi">
+                    <rect key="frame" x="0.0" y="64" width="600" height="2"/>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="2" id="D6u-hU-4ra"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="eIt-eR-EBH">
+                    <rect key="frame" x="0.0" y="66" width="600" height="534"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="6xX-Js-Gy9"/>
+                        <outlet property="delegate" destination="-1" id="ctI-mg-efv"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="DY0-wR-BSi" secondAttribute="trailing" id="0PV-08-e54"/>
+                <constraint firstAttribute="bottom" secondItem="eIt-eR-EBH" secondAttribute="bottom" id="PPu-zf-hiJ"/>
+                <constraint firstAttribute="trailing" secondItem="eIt-eR-EBH" secondAttribute="trailing" id="bhV-xf-OiY"/>
+                <constraint firstItem="DY0-wR-BSi" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="dMz-Yu-vJs"/>
+                <constraint firstItem="DY0-wR-BSi" firstAttribute="top" secondItem="MQE-Se-WGe" secondAttribute="bottom" id="f7m-RT-qbu"/>
+                <constraint firstItem="eIt-eR-EBH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="gr7-QP-brl"/>
+                <constraint firstItem="MQE-Se-WGe" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="kGl-v4-RAK"/>
+                <constraint firstItem="eIt-eR-EBH" firstAttribute="top" secondItem="DY0-wR-BSi" secondAttribute="bottom" id="p81-3Q-Wff"/>
+                <constraint firstAttribute="trailing" secondItem="MQE-Se-WGe" secondAttribute="trailing" id="utW-Jv-YDx"/>
+                <constraint firstItem="MQE-Se-WGe" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="xHJ-Op-Xgh"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="ico_back" width="20" height="16"/>
+    </resources>
+</document>

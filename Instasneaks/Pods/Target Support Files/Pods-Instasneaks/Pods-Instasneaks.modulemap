@@ -1,0 +1,6 @@
+framework module Pods_Instasneaks {
+  umbrella header "Pods-Instasneaks-umbrella.h"
+
+  export *
+  module * { export * }
+}

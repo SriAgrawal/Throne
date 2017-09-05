@@ -1,0 +1,131 @@
+PODS:
+  - AFNetworking (2.6.3):
+    - AFNetworking/NSURLConnection (= 2.6.3)
+    - AFNetworking/NSURLSession (= 2.6.3)
+    - AFNetworking/Reachability (= 2.6.3)
+    - AFNetworking/Security (= 2.6.3)
+    - AFNetworking/Serialization (= 2.6.3)
+    - AFNetworking/UIKit (= 2.6.3)
+  - AFNetworking/NSURLConnection (2.6.3):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.6.3):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.6.3)
+  - AFNetworking/Security (2.6.3)
+  - AFNetworking/Serialization (2.6.3)
+  - AFNetworking/UIKit (2.6.3):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - Bolts (1.8.4):
+    - Bolts/AppLinks (= 1.8.4)
+    - Bolts/Tasks (= 1.8.4)
+  - Bolts/AppLinks (1.8.4):
+    - Bolts/Tasks
+  - Bolts/Tasks (1.8.4)
+  - Braintree (4.7.0):
+    - Braintree/Card (= 4.7.0)
+    - Braintree/Core (= 4.7.0)
+    - Braintree/PayPal (= 4.7.0)
+    - Braintree/UI (= 4.7.0)
+  - Braintree/Card (4.7.0):
+    - Braintree/Core
+  - Braintree/Core (4.7.0)
+  - Braintree/PayPal (4.7.0):
+    - Braintree/Core
+    - Braintree/PayPalOneTouch
+  - Braintree/PayPalDataCollector (4.7.0):
+    - Braintree/Core
+    - Braintree/PayPalUtils
+  - Braintree/PayPalOneTouch (4.7.0):
+    - Braintree/Core
+    - Braintree/PayPalDataCollector
+    - Braintree/PayPalUtils
+  - Braintree/PayPalUtils (4.7.0)
+  - Braintree/UI (4.7.0):
+    - Braintree/Card
+    - Braintree/Core
+  - Branch (0.12.11):
+    - Branch/Core (= 0.12.11)
+    - Branch/without-IDFA (= 0.12.11)
+  - Branch/Core (0.12.11)
+  - Branch/without-IDFA (0.12.11)
+  - DACircularProgress (2.3.1)
+  - Fabric (1.6.9)
+  - FBSDKCoreKit (4.16.0):
+    - Bolts (~> 1.7)
+  - FBSDKLoginKit (4.16.0):
+    - FBSDKCoreKit
+  - FBSDKShareKit (4.16.0):
+    - FBSDKCoreKit
+  - HelpStack (1.1.2):
+    - AFNetworking (~> 2.0)
+    - HelpStack/Core (= 1.1.2)
+    - HelpStack/Stacks (= 1.1.2)
+    - HelpStack/UI (= 1.1.2)
+    - HelpStack/Util (= 1.1.2)
+  - HelpStack/Core (1.1.2):
+    - AFNetworking (~> 2.0)
+    - HelpStack/Util
+  - HelpStack/Stacks (1.1.2):
+    - AFNetworking (~> 2.0)
+    - HelpStack/Core
+    - HelpStack/Util
+  - HelpStack/UI (1.1.2):
+    - AFNetworking (~> 2.0)
+    - HelpStack/Core
+    - HelpStack/Stacks
+    - HelpStack/Util
+  - HelpStack/Util (1.1.2):
+    - AFNetworking (~> 2.0)
+  - Mixpanel (3.0.4):
+    - Mixpanel/Mixpanel (= 3.0.4)
+  - Mixpanel/Mixpanel (3.0.4)
+  - SDWebImage (3.8.2):
+    - SDWebImage/Core (= 3.8.2)
+  - SDWebImage/Core (3.8.2)
+  - SYPhotoBrowser (2.1):
+    - DACircularProgress
+    - SDWebImage
+  - TwitterCore (2.5.0):
+    - Fabric
+  - TwitterKit (2.5.0):
+    - TwitterCore (= 2.5.0)
+
+DEPENDENCIES:
+  - AFNetworking (~> 2.0)
+  - Braintree
+  - Branch
+  - DACircularProgress
+  - Fabric
+  - FBSDKCoreKit
+  - FBSDKLoginKit
+  - FBSDKShareKit
+  - HelpStack
+  - Mixpanel
+  - SDWebImage
+  - SYPhotoBrowser
+  - TwitterCore
+  - TwitterKit
+
+SPEC CHECKSUMS:
+  AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
+  Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
+  Braintree: 2d53c805e93a5830a4359a757be50fc0f25392a9
+  Branch: a620b19dc96fffabb7873a86c80c77c75395a664
+  DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
+  Fabric: bc5bec42cef4bcf1ee3ce0e218fc518e4b44dfbb
+  FBSDKCoreKit: 7a6baaed4a2b2a244ba253346713bdbc74df135b
+  FBSDKLoginKit: 9a514a55a7d05190f64d4ef09502737588b5b561
+  FBSDKShareKit: e81505de17fc0624cbaa87b83cccc9f2a786e6cb
+  HelpStack: a9067738597ef81835d84ac8bb75ee346e34f000
+  Mixpanel: 4a2330c26556109d2f42b01e36a05eb9e2caf25e
+  SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
+  SYPhotoBrowser: 68be184ed938d9fa23cc94c60e638e9322a53677
+  TwitterCore: 95c46af93112768a7983bd370d66023553601d01
+  TwitterKit: dd8042698b0ff5bd3066fa919b3b2b50d8eed829
+
+COCOAPODS: 0.39.0

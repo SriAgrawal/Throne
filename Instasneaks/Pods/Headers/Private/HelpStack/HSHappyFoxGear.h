@@ -1,0 +1,1 @@
+../../../HelpStack/Classes/Stacks/HappyFox/HSHappyFoxGear.h

@@ -1,0 +1,1 @@
+../../../HelpStack/Classes/UI/HSEditImageViewController.h

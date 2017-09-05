@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "4DA489B3C1B39FB197207D6B123ED8389AEB51F4",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "4DA489B3C1B39FB197207D6B123ED8389AEB51F4" : 0,
+    "0EA41333991AD83725171999482F6CF0B3B06DA9" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "ABD55613-BA37-4232-9CFB-B628820E5394",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "4DA489B3C1B39FB197207D6B123ED8389AEB51F4" : "instasneaks-16072710-ios\/",
+    "0EA41333991AD83725171999482F6CF0B3B06DA9" : "..\/FairFareApp"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Instasneaks",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Instasneaks\/Instasneaks.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/mobiloitteinc\/fairfare-121-ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "0EA41333991AD83725171999482F6CF0B3B06DA9"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/mobiloitteinc\/instasneaks-16072710-ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "4DA489B3C1B39FB197207D6B123ED8389AEB51F4"
+    }
+  ]
+}

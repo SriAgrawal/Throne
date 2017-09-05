@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="NeoSansPro.ttf">
+            <string>NeoSansPro-Regular</string>
+            <string>NeoSansPro-Regular</string>
+            <string>NeoSansPro-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="" id="gTV-IL-0wX" customClass="ISFeaturedCololectionCell">
+            <rect key="frame" x="0.0" y="0.0" width="175" height="232"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="175" height="232"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4ma-aK-qCI">
+                        <rect key="frame" x="0.0" y="0.0" width="173" height="230"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$200" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NjZ-x2-XG0">
+                                <rect key="frame" x="13" y="196" width="157" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="UgR-Ug-c7e"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="NeoSansPro-Regular" family="Neo Sans Pro" pointSize="10"/>
+                                <color key="textColor" red="0.6470588235294118" green="0.56862745098039214" blue="0.29411764705882354" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nike Balace Gray Series" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WO7-oL-tEA">
+                                <rect key="frame" x="13" y="178" width="157" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="e1t-t2-wN4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="NeoSansPro-Regular" family="Neo Sans Pro" pointSize="12"/>
+                                <color key="textColor" white="0.21062500000000001" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="H3V-PO-RqL">
+                                <rect key="frame" x="0.0" y="0.0" width="173" height="175"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="175" id="u1A-3u-YIC"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Southwest Custom" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Syh-wf-t2p">
+                                <rect key="frame" x="13" y="213" width="157" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="0wf-mm-b4L"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="NeoSansPro-Regular" family="Neo Sans Pro" pointSize="10"/>
+                                <color key="textColor" white="0.44" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Syh-wf-t2p" firstAttribute="top" secondItem="NjZ-x2-XG0" secondAttribute="bottom" constant="1" id="3UO-5m-TU9"/>
+                            <constraint firstAttribute="trailing" secondItem="WO7-oL-tEA" secondAttribute="trailing" constant="3" id="7pw-WY-Ycx"/>
+                            <constraint firstAttribute="trailing" secondItem="Syh-wf-t2p" secondAttribute="trailing" constant="3" id="AF5-pp-5sW"/>
+                            <constraint firstItem="WO7-oL-tEA" firstAttribute="leading" secondItem="4ma-aK-qCI" secondAttribute="leading" constant="13" id="Gal-ri-iYy"/>
+                            <constraint firstAttribute="trailing" secondItem="NjZ-x2-XG0" secondAttribute="trailing" constant="3" id="HUR-De-Dlx"/>
+                            <constraint firstItem="Syh-wf-t2p" firstAttribute="leading" secondItem="4ma-aK-qCI" secondAttribute="leading" constant="13" id="OIz-gG-kz1"/>
+                            <constraint firstItem="WO7-oL-tEA" firstAttribute="top" secondItem="H3V-PO-RqL" secondAttribute="bottom" constant="3" id="UfV-l1-aND"/>
+                            <constraint firstItem="H3V-PO-RqL" firstAttribute="top" secondItem="4ma-aK-qCI" secondAttribute="top" id="jz4-Pd-4dD"/>
+                            <constraint firstItem="NjZ-x2-XG0" firstAttribute="top" secondItem="WO7-oL-tEA" secondAttribute="bottom" constant="2" id="prx-4f-P9v"/>
+                            <constraint firstAttribute="trailing" secondItem="H3V-PO-RqL" secondAttribute="trailing" id="wg8-5J-R9U"/>
+                            <constraint firstItem="H3V-PO-RqL" firstAttribute="leading" secondItem="4ma-aK-qCI" secondAttribute="leading" id="yR5-jb-DRa"/>
+                            <constraint firstItem="NjZ-x2-XG0" firstAttribute="leading" secondItem="4ma-aK-qCI" secondAttribute="leading" constant="13" id="zrs-98-gep"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="corner">
+                                <real key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="4ma-aK-qCI" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="6Xs-v4-Lnc"/>
+                <constraint firstAttribute="trailing" secondItem="4ma-aK-qCI" secondAttribute="trailing" constant="2" id="6i9-r6-4rY"/>
+                <constraint firstAttribute="bottom" secondItem="4ma-aK-qCI" secondAttribute="bottom" constant="2" id="L8B-Fx-DhO"/>
+                <constraint firstItem="4ma-aK-qCI" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="hqE-V8-vNt"/>
+            </constraints>
+            <size key="customSize" width="192" height="219"/>
+            <connections>
+                <outlet property="imageview_ProductImage" destination="H3V-PO-RqL" id="8zR-aS-c5m"/>
+                <outlet property="label_PricelLabel" destination="NjZ-x2-XG0" id="0fR-mZ-eXt"/>
+                <outlet property="label_ProductName" destination="WO7-oL-tEA" id="X5C-G4-EvG"/>
+                <outlet property="label_StoreName" destination="Syh-wf-t2p" id="rhE-lS-ueQ"/>
+                <outlet property="view_Subview" destination="4ma-aK-qCI" id="3vd-QB-dJM"/>
+            </connections>
+            <point key="canvasLocation" x="251.5" y="237"/>
+        </collectionViewCell>
+    </objects>
+</document>

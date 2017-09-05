@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="TradingItemCollectionCell">
+            <rect key="frame" x="0.0" y="0.0" width="140" height="214"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="140" height="214"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6LP-Cb-htZ">
+                        <rect key="frame" x="0.0" y="0.0" width="140" height="214"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Clothing" translatesAutoresizingMaskIntoConstraints="NO" id="Fpg-6e-Gap">
+                                <rect key="frame" x="0.0" y="0.0" width="140" height="140"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="140" id="7lo-sY-uil"/>
+                                    <constraint firstAttribute="width" constant="140" id="XWt-YY-vJG"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nike Balance Grey" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hLl-21-fFJ">
+                                <rect key="frame" x="11" y="146" width="121" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="oVe-mf-1f4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hLl-21-fFJ" firstAttribute="leading" secondItem="6LP-Cb-htZ" secondAttribute="leading" constant="11" id="5id-6Z-5Xa"/>
+                            <constraint firstItem="Fpg-6e-Gap" firstAttribute="centerX" secondItem="6LP-Cb-htZ" secondAttribute="centerX" id="6Xn-ii-iDz"/>
+                            <constraint firstAttribute="trailing" secondItem="hLl-21-fFJ" secondAttribute="trailing" constant="8" id="GjV-TT-YaJ"/>
+                            <constraint firstItem="Fpg-6e-Gap" firstAttribute="top" secondItem="6LP-Cb-htZ" secondAttribute="top" id="NWs-Ru-cXP"/>
+                            <constraint firstItem="hLl-21-fFJ" firstAttribute="top" secondItem="Fpg-6e-Gap" secondAttribute="bottom" constant="6" id="zew-k1-eue"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4u4-1F-WgM">
+                        <rect key="frame" x="14" y="179" width="110" height="26"/>
+                        <color key="backgroundColor" red="0.60000002384185791" green="0.40000000596046448" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="26" id="1pk-WA-NCg"/>
+                            <constraint firstAttribute="width" constant="110" id="Oe2-Sx-rdB"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="6LP-Cb-htZ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="4pE-IG-9mh"/>
+                <constraint firstAttribute="bottom" secondItem="6LP-Cb-htZ" secondAttribute="bottom" id="GMe-QT-mRV"/>
+                <constraint firstItem="4u4-1F-WgM" firstAttribute="top" secondItem="hLl-21-fFJ" secondAttribute="bottom" constant="7" id="L0H-Ic-hMp"/>
+                <constraint firstItem="6LP-Cb-htZ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="TyE-vZ-TpF"/>
+                <constraint firstItem="4u4-1F-WgM" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" constant="-1" id="WAj-z0-4Fn"/>
+                <constraint firstAttribute="trailing" secondItem="6LP-Cb-htZ" secondAttribute="trailing" id="kk6-Ab-IhR"/>
+            </constraints>
+            <size key="customSize" width="140" height="214"/>
+            <point key="canvasLocation" x="210" y="337"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Clothing" width="372" height="172"/>
+    </resources>
+</document>

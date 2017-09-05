@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="NeoSansPro.ttf">
+            <string>NeoSansPro-Regular</string>
+            <string>NeoSansPro-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ISLoginVC">
+            <connections>
+                <outlet property="button_facebook" destination="VyP-li-8Em" id="DI7-rq-Wda"/>
+                <outlet property="button_twitter" destination="CMs-74-g04" id="hnr-sV-lOp"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="yKG-DV-7rT">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CMs-74-g04">
+                    <rect key="frame" x="20" y="383" width="560" height="54"/>
+                    <color key="backgroundColor" red="0.2274509804" green="0.61176470589999998" blue="0.89411764709999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="54" id="eHq-Em-nGi"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="NeoSansPro-Regular" family="Neo Sans Pro" pointSize="16"/>
+                    <inset key="titleEdgeInsets" minX="56" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="Login with Twitter" image="twitter_icon"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="corner">
+                            <real key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="twitterLoginAction:" destination="-1" eventType="touchUpInside" id="01k-qK-8qQ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VyP-li-8Em">
+                    <rect key="frame" x="20" y="449" width="560" height="54"/>
+                    <color key="backgroundColor" red="0.1843137255" green="0.2901960784" blue="0.51372549020000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="54" id="ZZx-VV-QaD"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="NeoSansPro-Regular" family="Neo Sans Pro" pointSize="16"/>
+                    <inset key="titleEdgeInsets" minX="56" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="Login with Facebook" image="ico_facebook_login"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="corner">
+                            <real key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="facebookLoginAction:" destination="-1" eventType="touchUpInside" id="Jbb-Qh-Upc"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f16-Ht-uaB">
+                    <rect key="frame" x="10" y="20" width="70" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="7h3-NE-DTa"/>
+                        <constraint firstAttribute="width" constant="70" id="avY-oK-J6v"/>
+                    </constraints>
+                    <state key="normal" image="ico_back_white"/>
+                    <connections>
+                        <action selector="backButtonAction:" destination="-1" eventType="touchUpInside" id="VtH-E8-RdA"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="yKG-DV-7rT" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Btp-aQ-kcw"/>
+                <constraint firstItem="CMs-74-g04" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="CXi-dF-tL7"/>
+                <constraint firstAttribute="trailing" secondItem="VyP-li-8Em" secondAttribute="trailing" constant="20" id="DWg-td-krE"/>
+                <constraint firstAttribute="trailing" secondItem="CMs-74-g04" secondAttribute="trailing" constant="20" id="Ft2-TJ-zaa"/>
+                <constraint firstItem="VyP-li-8Em" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="Icn-uR-fOV"/>
+                <constraint firstItem="yKG-DV-7rT" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="VvC-Uu-cO1"/>
+                <constraint firstAttribute="bottom" secondItem="VyP-li-8Em" secondAttribute="bottom" constant="97" id="aUu-KJ-xZJ"/>
+                <constraint firstItem="VyP-li-8Em" firstAttribute="top" secondItem="CMs-74-g04" secondAttribute="bottom" constant="12" id="hn9-Ua-01r"/>
+                <constraint firstAttribute="trailing" secondItem="yKG-DV-7rT" secondAttribute="trailing" id="iic-2q-xV5"/>
+                <constraint firstItem="f16-Ht-uaB" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="mIf-vZ-Xaa"/>
+                <constraint firstItem="f16-Ht-uaB" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="x2n-gB-FpR"/>
+                <constraint firstAttribute="bottom" secondItem="yKG-DV-7rT" secondAttribute="bottom" id="xXc-wP-UEO"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="background" width="375" height="667"/>
+        <image name="ico_back_white" width="20" height="16"/>
+        <image name="ico_facebook_login" width="20" height="20"/>
+        <image name="twitter_icon" width="20" height="18"/>
+    </resources>
+</document>

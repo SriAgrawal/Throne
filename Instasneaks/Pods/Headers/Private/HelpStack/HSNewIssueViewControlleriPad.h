@@ -1,0 +1,1 @@
+../../../HelpStack/Classes/UI/HSNewIssueViewControlleriPad.h

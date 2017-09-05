@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="NeoSansPro.ttf">
+            <string>NeoSansPro-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ISShopCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="160" height="160"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="160" height="160"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="osT-LQ-ead">
+                        <rect key="frame" x="0.0" y="0.0" width="160" height="160"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="corner">
+                                <real key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" red="0.89411764709999997" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g9b-hm-Fqt">
+                        <rect key="frame" x="0.0" y="132" width="160" height="27"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="27" id="Hsz-IY-Ogj"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="NeoSansPro-Regular" family="Neo Sans Pro" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="g9b-hm-Fqt" secondAttribute="trailing" id="00F-sM-d4B"/>
+                <constraint firstAttribute="trailing" secondItem="osT-LQ-ead" secondAttribute="trailing" id="KMJ-OC-B4R"/>
+                <constraint firstAttribute="bottom" secondItem="g9b-hm-Fqt" secondAttribute="bottom" constant="1" id="SiG-df-JRH"/>
+                <constraint firstItem="g9b-hm-Fqt" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ddK-lW-ZK5"/>
+                <constraint firstAttribute="bottom" secondItem="osT-LQ-ead" secondAttribute="bottom" id="iKV-NC-fvw"/>
+                <constraint firstItem="osT-LQ-ead" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="m6c-Tx-xoJ"/>
+                <constraint firstItem="osT-LQ-ead" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="p6V-Ub-t5k"/>
+            </constraints>
+            <size key="customSize" width="173" height="160"/>
+            <connections>
+                <outlet property="imageView_BrandImage" destination="osT-LQ-ead" id="PEX-i9-eRO"/>
+                <outlet property="label_brandName" destination="g9b-hm-Fqt" id="HW5-96-fyO"/>
+            </connections>
+            <point key="canvasLocation" x="232" y="303"/>
+        </collectionViewCell>
+    </objects>
+</document>

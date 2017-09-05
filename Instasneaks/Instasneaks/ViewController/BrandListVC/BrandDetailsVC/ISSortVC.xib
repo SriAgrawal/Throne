@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="NeoSansPro.ttf">
+            <string>NeoSansPro-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ISSortVC">
+            <connections>
+                <outlet property="sortTableView" destination="rQ4-O2-9kr" id="S5l-gB-3dt"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JC7-hC-ji2">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="64"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sort By" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HdJ-s2-PiB">
+                            <rect key="frame" x="250" y="24" width="100" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="100" id="6Gh-Rw-sPl"/>
+                                <constraint firstAttribute="height" constant="40" id="uwL-qt-U8g"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="NeoSansPro-Regular" family="Neo Sans Pro" pointSize="18"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KTo-FO-44R">
+                            <rect key="frame" x="10" y="20" width="40" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="T4L-qB-NDc"/>
+                                <constraint firstAttribute="width" constant="40" id="ye5-d2-bXc"/>
+                            </constraints>
+                            <state key="normal" title="Back" image="ico_close"/>
+                            <connections>
+                                <action selector="closeAction:" destination="-1" eventType="touchUpInside" id="lYh-OY-cMt"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="KTo-FO-44R" firstAttribute="leading" secondItem="JC7-hC-ji2" secondAttribute="leading" constant="10" id="3mD-4L-HJr"/>
+                        <constraint firstItem="HdJ-s2-PiB" firstAttribute="top" secondItem="JC7-hC-ji2" secondAttribute="top" constant="24" id="R6o-bm-CZp"/>
+                        <constraint firstItem="HdJ-s2-PiB" firstAttribute="centerX" secondItem="JC7-hC-ji2" secondAttribute="centerX" id="xdk-Sp-oRB"/>
+                        <constraint firstItem="KTo-FO-44R" firstAttribute="top" secondItem="JC7-hC-ji2" secondAttribute="top" constant="20" id="xsa-Ub-YPZ"/>
+                        <constraint firstAttribute="height" constant="64" id="yUJ-Ip-MyW"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kVb-vE-3aL">
+                    <rect key="frame" x="0.0" y="64" width="600" height="2"/>
+                    <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="2" id="j41-F1-26c"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="44" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="rQ4-O2-9kr">
+                    <rect key="frame" x="0.0" y="66" width="600" height="240"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="240" id="jkS-dt-bct"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="GQ9-ls-zWo"/>
+                        <outlet property="delegate" destination="-1" id="pYE-6K-Tpb"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.4281519396551724" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="JC7-hC-ji2" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="9yL-HW-LKF"/>
+                <constraint firstItem="rQ4-O2-9kr" firstAttribute="top" secondItem="kVb-vE-3aL" secondAttribute="bottom" id="BSr-sP-Vtf"/>
+                <constraint firstAttribute="trailing" secondItem="JC7-hC-ji2" secondAttribute="trailing" id="J1i-IX-thJ"/>
+                <constraint firstItem="kVb-vE-3aL" firstAttribute="top" secondItem="JC7-hC-ji2" secondAttribute="bottom" id="OiR-ni-tOt"/>
+                <constraint firstItem="rQ4-O2-9kr" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="f6R-Z1-f3E"/>
+                <constraint firstItem="JC7-hC-ji2" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="jG1-nf-hMq"/>
+                <constraint firstAttribute="trailing" secondItem="rQ4-O2-9kr" secondAttribute="trailing" id="mkk-cu-nR8"/>
+                <constraint firstAttribute="trailing" secondItem="kVb-vE-3aL" secondAttribute="trailing" id="wPv-uW-fge"/>
+                <constraint firstItem="kVb-vE-3aL" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="yR2-h5-p1V"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="ico_close" width="18" height="18"/>
+    </resources>
+</document>

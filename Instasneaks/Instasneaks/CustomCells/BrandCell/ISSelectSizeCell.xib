@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="NeoSansPro.ttf">
+            <string>NeoSansPro-Regular</string>
+            <string>NeoSansPro-Regular</string>
+            <string>NeoSansPro-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="selectSizeCell" id="KGk-i7-Jjw" customClass="ISSelectSizeCell">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="76"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="600" height="75"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USED" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rp0-Rg-btr">
+                        <rect key="frame" x="395" y="13" width="180" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="0A7-By-oK8"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="NeoSansPro-Regular" family="Neo Sans Pro" pointSize="15"/>
+                        <color key="textColor" white="0.5" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tuU-0g-4HA">
+                        <rect key="frame" x="12" y="75" width="576" height="1"/>
+                        <color key="backgroundColor" white="0.84462890624999998" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="I1c-j7-czG"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0eS-yY-Tep">
+                        <rect key="frame" x="25" y="13" width="180" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="E5F-51-2Ud"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="NeoSansPro-Regular" family="Neo Sans Pro" pointSize="15"/>
+                        <color key="textColor" white="0.5" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$135" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ct4-xw-Blb">
+                        <rect key="frame" x="210" y="13" width="180" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="8pI-Od-wkW"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="NeoSansPro-Regular" family="Neo Sans Pro" pointSize="15"/>
+                        <color key="textColor" white="0.5" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="Rp0-Rg-btr" firstAttribute="leading" secondItem="ct4-xw-Blb" secondAttribute="trailing" constant="5" id="1gH-Wc-4qA"/>
+                    <constraint firstAttribute="trailing" secondItem="Rp0-Rg-btr" secondAttribute="trailing" constant="25" id="4fr-Ze-Fej"/>
+                    <constraint firstItem="tuU-0g-4HA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="DyU-JZ-rga"/>
+                    <constraint firstItem="0eS-yY-Tep" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="25" id="GEf-mX-4sU"/>
+                    <constraint firstItem="ct4-xw-Blb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="13" id="HCj-ng-ROM"/>
+                    <constraint firstItem="0eS-yY-Tep" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="13" id="Jya-JD-AFC"/>
+                    <constraint firstItem="Rp0-Rg-btr" firstAttribute="width" secondItem="ct4-xw-Blb" secondAttribute="width" id="PXR-If-RmH"/>
+                    <constraint firstAttribute="trailing" secondItem="tuU-0g-4HA" secondAttribute="trailing" constant="12" id="bNw-Ei-2Vn"/>
+                    <constraint firstItem="Rp0-Rg-btr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="13" id="dTf-MB-k61"/>
+                    <constraint firstItem="ct4-xw-Blb" firstAttribute="width" secondItem="0eS-yY-Tep" secondAttribute="width" id="kQo-IH-Vrz"/>
+                    <constraint firstItem="ct4-xw-Blb" firstAttribute="leading" secondItem="0eS-yY-Tep" secondAttribute="trailing" constant="5" id="nCR-lC-sqC"/>
+                    <constraint firstAttribute="bottom" secondItem="tuU-0g-4HA" secondAttribute="bottom" constant="-1" id="q66-Nk-Kx4"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="label_condition" destination="Rp0-Rg-btr" id="Y4J-2f-YMC"/>
+                <outlet property="label_price" destination="ct4-xw-Blb" id="7bx-0l-NXR"/>
+                <outlet property="label_size" destination="0eS-yY-Tep" id="5uV-CL-dGK"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

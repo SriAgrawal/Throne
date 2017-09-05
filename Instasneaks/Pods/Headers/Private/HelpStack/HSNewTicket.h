@@ -1,0 +1,1 @@
+../../../HelpStack/Classes/Core/HSNewTicket.h

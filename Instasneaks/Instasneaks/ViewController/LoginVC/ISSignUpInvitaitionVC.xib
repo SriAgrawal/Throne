@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="NeoSansPro-Medium.ttf">
+            <string>NeoSansPro-Medium</string>
+            <string>NeoSansPro-Medium</string>
+            <string>NeoSansPro-Medium</string>
+        </mutableArray>
+        <mutableArray key="NeoSansPro.ttf">
+            <string>NeoSansPro-Regular</string>
+            <string>NeoSansPro-Regular</string>
+            <string>NeoSansPro-Regular</string>
+            <string>NeoSansPro-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ISSignUpInvitaitionVC">
+            <connections>
+                <outlet property="buttonLogin" destination="3ux-Fg-Uzw" id="nHo-67-ahL"/>
+                <outlet property="inviteOfferLbl" destination="yhN-m3-L02" id="8qb-R7-MCD"/>
+                <outlet property="userNameLbl" destination="cyG-6b-gkL" id="qAJ-Ht-kEs"/>
+                <outlet property="view" destination="0u3-SI-JcJ" id="LQj-hf-3Bz"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="0u3-SI-JcJ">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="92I-kQ-Vgg">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="21" translatesAutoresizingMaskIntoConstraints="NO" id="Fpq-2Y-RcX">
+                    <rect key="frame" x="270" y="132" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="Z7I-TT-TXZ"/>
+                        <constraint firstAttribute="height" constant="60" id="wFI-sa-YEo"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="corner">
+                            <real key="value" value="30"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bryan Chirstensen" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cyG-6b-gkL">
+                    <rect key="frame" x="175" y="194" width="250" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="250" id="JXf-ZB-6t4"/>
+                        <constraint firstAttribute="height" constant="30" id="K32-Pj-3Ab"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="NeoSansPro-Medium" family="Neo Sans Pro" pointSize="18"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="has invited you to join" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PtA-V8-HtB">
+                    <rect key="frame" x="175" y="224" width="250" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="BRV-9Q-phT"/>
+                        <constraint firstAttribute="width" constant="250" id="dg2-cE-3n9"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="NeoSansPro-Regular" family="Neo Sans Pro" pointSize="15"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Throne credit towards your first purchase" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kp0-aL-MaD">
+                    <rect key="frame" x="20" y="283" width="560" height="28"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="28" id="P19-QI-Vi7"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="NeoSansPro-Medium" family="Neo Sans Pro" pointSize="15"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create an account and receive $10 in" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yhN-m3-L02">
+                    <rect key="frame" x="20" y="257" width="560" height="28"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="28" id="9uN-6a-mhY"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="NeoSansPro-Medium" family="Neo Sans Pro" pointSize="15"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gcN-0R-YmX">
+                    <rect key="frame" x="20" y="356" width="560" height="54"/>
+                    <color key="backgroundColor" red="0.2274509804" green="0.61176470589999998" blue="0.89411764709999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="54" id="h41-3g-3Qh"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="NeoSansPro-Regular" family="Neo Sans Pro" pointSize="16"/>
+                    <inset key="titleEdgeInsets" minX="50" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="Sign Up with Twitter" image="twitter_icon"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="corner">
+                            <real key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="twitterLoginAction:" destination="-1" eventType="touchUpInside" id="FeG-3V-ceG"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="phf-vT-IsJ">
+                    <rect key="frame" x="20" y="424" width="560" height="54"/>
+                    <color key="backgroundColor" red="0.1843137255" green="0.2901960784" blue="0.51372549020000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="54" id="nxN-2E-IGn"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="NeoSansPro-Regular" family="Neo Sans Pro" pointSize="16"/>
+                    <inset key="titleEdgeInsets" minX="50" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="Sign Up with Facebook" image="ico_facebook_login"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="corner">
+                            <real key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="facebookLoginAction:" destination="-1" eventType="touchUpInside" id="JBM-ky-5HD"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ux-Fg-Uzw">
+                    <rect key="frame" x="20" y="510" width="560" height="54"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="54" id="065-b3-JPQ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="NeoSansPro-Regular" family="Neo Sans Pro" pointSize="16"/>
+                    <connections>
+                        <action selector="alreadyHaveAnAccountAction:" destination="-1" eventType="touchUpInside" id="MzX-4N-MzT"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="92I-kQ-Vgg" firstAttribute="top" secondItem="0u3-SI-JcJ" secondAttribute="top" id="6yI-Rf-DTg"/>
+                <constraint firstItem="kp0-aL-MaD" firstAttribute="top" secondItem="yhN-m3-L02" secondAttribute="bottom" constant="-2" id="80B-ZW-EA8"/>
+                <constraint firstAttribute="bottom" secondItem="92I-kQ-Vgg" secondAttribute="bottom" id="8ef-ef-eYh"/>
+                <constraint firstItem="Fpq-2Y-RcX" firstAttribute="centerX" secondItem="0u3-SI-JcJ" secondAttribute="centerX" id="8yt-rc-pZ9"/>
+                <constraint firstAttribute="bottom" secondItem="3ux-Fg-Uzw" secondAttribute="bottom" constant="36" id="BWP-S0-frY"/>
+                <constraint firstItem="PtA-V8-HtB" firstAttribute="centerX" secondItem="0u3-SI-JcJ" secondAttribute="centerX" id="G0D-s3-J92"/>
+                <constraint firstAttribute="trailing" secondItem="3ux-Fg-Uzw" secondAttribute="trailing" constant="20" id="HkK-JK-ZpF"/>
+                <constraint firstItem="gcN-0R-YmX" firstAttribute="top" secondItem="Fpq-2Y-RcX" secondAttribute="bottom" constant="164" id="JJs-MP-F8d"/>
+                <constraint firstAttribute="trailing" secondItem="phf-vT-IsJ" secondAttribute="trailing" constant="20" id="LxX-Pf-WNB"/>
+                <constraint firstAttribute="trailing" secondItem="gcN-0R-YmX" secondAttribute="trailing" constant="20" id="Nwk-Nt-Lnj"/>
+                <constraint firstItem="cyG-6b-gkL" firstAttribute="centerX" secondItem="0u3-SI-JcJ" secondAttribute="centerX" id="R5p-kY-aUc"/>
+                <constraint firstAttribute="trailing" secondItem="kp0-aL-MaD" secondAttribute="trailing" constant="20" id="SCQ-v1-Kv3"/>
+                <constraint firstAttribute="bottom" secondItem="phf-vT-IsJ" secondAttribute="bottom" constant="122" id="V81-kb-Wty"/>
+                <constraint firstItem="yhN-m3-L02" firstAttribute="top" secondItem="PtA-V8-HtB" secondAttribute="bottom" constant="8" id="am4-rP-l1j"/>
+                <constraint firstItem="yhN-m3-L02" firstAttribute="leading" secondItem="0u3-SI-JcJ" secondAttribute="leading" constant="20" id="bDz-nj-uIe"/>
+                <constraint firstAttribute="trailing" secondItem="92I-kQ-Vgg" secondAttribute="trailing" id="cga-xb-uBS"/>
+                <constraint firstItem="92I-kQ-Vgg" firstAttribute="leading" secondItem="0u3-SI-JcJ" secondAttribute="leading" id="djm-4N-2DX"/>
+                <constraint firstItem="phf-vT-IsJ" firstAttribute="leading" secondItem="0u3-SI-JcJ" secondAttribute="leading" constant="20" id="e2E-DY-vn9"/>
+                <constraint firstItem="PtA-V8-HtB" firstAttribute="top" secondItem="cyG-6b-gkL" secondAttribute="bottom" id="jsi-mr-J0D"/>
+                <constraint firstItem="3ux-Fg-Uzw" firstAttribute="leading" secondItem="0u3-SI-JcJ" secondAttribute="leading" constant="20" id="kw2-ur-5XL"/>
+                <constraint firstItem="kp0-aL-MaD" firstAttribute="leading" secondItem="0u3-SI-JcJ" secondAttribute="leading" constant="20" id="nSi-JS-mnz"/>
+                <constraint firstItem="gcN-0R-YmX" firstAttribute="top" secondItem="PtA-V8-HtB" secondAttribute="bottom" constant="107" id="njr-dX-oCY"/>
+                <constraint firstItem="gcN-0R-YmX" firstAttribute="leading" secondItem="0u3-SI-JcJ" secondAttribute="leading" constant="20" id="sht-jc-SLk"/>
+                <constraint firstAttribute="trailing" secondItem="yhN-m3-L02" secondAttribute="trailing" constant="20" id="vXy-nu-0D9"/>
+                <constraint firstItem="phf-vT-IsJ" firstAttribute="top" secondItem="gcN-0R-YmX" secondAttribute="bottom" constant="14" id="yx0-7N-g4i"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="21" width="274" height="320"/>
+        <image name="background" width="375" height="667"/>
+        <image name="ico_facebook_login" width="20" height="20"/>
+        <image name="twitter_icon" width="20" height="18"/>
+    </resources>
+</document>

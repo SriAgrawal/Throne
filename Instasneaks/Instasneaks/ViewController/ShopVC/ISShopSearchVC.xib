@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ISShopSearchVC">
+            <connections>
+                <outlet property="tableView_Shop" destination="IGK-Ro-u48" id="gSp-XZ-WRj"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="IGK-Ro-u48">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="GOe-KO-pqh"/>
+                        <outlet property="delegate" destination="-1" id="58E-hH-7c0"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="IGK-Ro-u48" secondAttribute="trailing" id="Kmd-eT-JoP"/>
+                <constraint firstItem="IGK-Ro-u48" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="OPP-Gm-oqg"/>
+                <constraint firstAttribute="bottom" secondItem="IGK-Ro-u48" secondAttribute="bottom" id="PsO-az-3T9"/>
+                <constraint firstItem="IGK-Ro-u48" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="QxG-Wu-Jhz"/>
+            </constraints>
+            <point key="canvasLocation" x="321" y="271"/>
+        </view>
+    </objects>
+</document>

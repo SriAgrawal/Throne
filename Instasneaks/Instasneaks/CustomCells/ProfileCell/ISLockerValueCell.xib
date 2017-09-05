@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="NeoSansPro.ttf">
+            <string>NeoSansPro-Regular</string>
+            <string>NeoSansPro-Regular</string>
+            <string>NeoSansPro-Regular</string>
+            <string>NeoSansPro-Regular</string>
+            <string>NeoSansPro-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="lockerValueCell" rowHeight="80" id="CUF-oG-vYW" customClass="ISLockerValueCell">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="CUF-oG-vYW" id="Mhf-EL-Zef">
+                <rect key="frame" x="0.0" y="0.0" width="600" height="69"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image-not-available" translatesAutoresizingMaskIntoConstraints="NO" id="RD0-Oc-fdH">
+                        <rect key="frame" x="57" y="7" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="4DL-j3-Hp4"/>
+                            <constraint firstAttribute="height" constant="50" id="Lte-hG-naF"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="corner">
+                                <real key="value" value="25"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gV1-zJ-ttm">
+                        <rect key="frame" x="8" y="16" width="42" height="37"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="37" id="1se-2p-Vtt"/>
+                            <constraint firstAttribute="width" constant="42" id="hV8-aD-4x6"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="NeoSansPro-Regular" family="Neo Sans Pro" pointSize="17"/>
+                        <color key="textColor" white="0.20000000000000001" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q4i-mX-IPP">
+                        <rect key="frame" x="130" y="11" width="363" height="18"/>
+                        <fontDescription key="fontDescription" name="NeoSansPro-Regular" family="Neo Sans Pro" pointSize="16"/>
+                        <color key="textColor" white="0.20000000000000001" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VxQ-sg-jT6">
+                        <rect key="frame" x="130" y="32" width="363" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="n6R-gq-1U7"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="NeoSansPro-Regular" family="Neo Sans Pro" pointSize="13"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cash Value" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W5h-su-d7M">
+                        <rect key="frame" x="509" y="40" width="83" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="83" id="T6h-6n-fuL"/>
+                            <constraint firstAttribute="height" constant="21" id="XEf-qd-Oqi"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="NeoSansPro-Regular" family="Neo Sans Pro" pointSize="12"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bkq-l3-m2G">
+                        <rect key="frame" x="0.0" y="68" width="600" height="1"/>
+                        <color key="backgroundColor" white="0.92423828124999996" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="LIK-nG-QK3"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rsH-z7-3Mp">
+                        <rect key="frame" x="509" y="14" width="83" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="3Sw-UZ-nco"/>
+                            <constraint firstAttribute="width" constant="83" id="p2S-NR-iNW"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="NeoSansPro-Regular" family="Neo Sans Pro" pointSize="17"/>
+                        <color key="textColor" red="0.17254901960784313" green="0.40000000000000002" blue="0.11764705882352941" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="gV1-zJ-ttm" firstAttribute="centerY" secondItem="Mhf-EL-Zef" secondAttribute="centerY" id="4DZ-Gd-1ul"/>
+                    <constraint firstItem="RD0-Oc-fdH" firstAttribute="leading" secondItem="gV1-zJ-ttm" secondAttribute="trailing" constant="7" id="4qy-Uw-20F"/>
+                    <constraint firstAttribute="trailing" secondItem="bkq-l3-m2G" secondAttribute="trailing" id="7nD-7O-rW4"/>
+                    <constraint firstItem="W5h-su-d7M" firstAttribute="leading" secondItem="VxQ-sg-jT6" secondAttribute="trailing" constant="16" id="8Wa-hy-mrV"/>
+                    <constraint firstItem="rsH-z7-3Mp" firstAttribute="top" secondItem="Mhf-EL-Zef" secondAttribute="top" constant="14" id="9Tu-Y3-BkN"/>
+                    <constraint firstItem="RD0-Oc-fdH" firstAttribute="centerY" secondItem="Mhf-EL-Zef" secondAttribute="centerY" constant="-2.5" id="ANB-ap-7nk"/>
+                    <constraint firstAttribute="bottom" secondItem="bkq-l3-m2G" secondAttribute="bottom" id="Gb4-AT-Lee"/>
+                    <constraint firstItem="VxQ-sg-jT6" firstAttribute="leading" secondItem="RD0-Oc-fdH" secondAttribute="trailing" constant="23" id="OXn-SF-IQ4"/>
+                    <constraint firstItem="rsH-z7-3Mp" firstAttribute="leading" secondItem="q4i-mX-IPP" secondAttribute="trailing" constant="16" id="UDy-1y-E2B"/>
+                    <constraint firstItem="q4i-mX-IPP" firstAttribute="leading" secondItem="RD0-Oc-fdH" secondAttribute="trailing" constant="23" id="cjL-YL-6a7"/>
+                    <constraint firstAttribute="trailing" secondItem="rsH-z7-3Mp" secondAttribute="trailing" constant="8" id="e72-Pm-FkF"/>
+                    <constraint firstAttribute="trailing" secondItem="W5h-su-d7M" secondAttribute="trailing" constant="8" id="fx2-OM-oc0"/>
+                    <constraint firstItem="bkq-l3-m2G" firstAttribute="leading" secondItem="Mhf-EL-Zef" secondAttribute="leading" id="gf8-Vg-AIH"/>
+                    <constraint firstItem="bkq-l3-m2G" firstAttribute="top" secondItem="VxQ-sg-jT6" secondAttribute="bottom" constant="14" id="i3m-LX-C2o"/>
+                    <constraint firstItem="gV1-zJ-ttm" firstAttribute="leading" secondItem="Mhf-EL-Zef" secondAttribute="leading" constant="8" id="kJu-u7-94w"/>
+                    <constraint firstItem="W5h-su-d7M" firstAttribute="top" secondItem="rsH-z7-3Mp" secondAttribute="bottom" constant="5" id="mzs-Xc-qYi"/>
+                    <constraint firstItem="q4i-mX-IPP" firstAttribute="top" secondItem="Mhf-EL-Zef" secondAttribute="top" constant="11" id="o5e-We-pLd"/>
+                    <constraint firstItem="VxQ-sg-jT6" firstAttribute="top" secondItem="q4i-mX-IPP" secondAttribute="bottom" constant="3" id="yGK-1D-dpK"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imageView_userImage" destination="RD0-Oc-fdH" id="Mrc-dc-AEK"/>
+                <outlet property="label_chechItems" destination="W5h-su-d7M" id="wLP-Ps-fxQ"/>
+                <outlet property="label_moeny" destination="rsH-z7-3Mp" id="4BA-oZ-Ryt"/>
+                <outlet property="label_seperator" destination="bkq-l3-m2G" id="vJt-cj-KIQ"/>
+                <outlet property="label_serial_number" destination="gV1-zJ-ttm" id="Nl8-NL-N0e"/>
+                <outlet property="label_userName" destination="q4i-mX-IPP" id="IoG-re-IQQ"/>
+                <outlet property="label_userPlace" destination="VxQ-sg-jT6" id="jjC-se-JjX"/>
+            </connections>
+            <point key="canvasLocation" x="335" y="328"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="image-not-available" width="150" height="150"/>
+    </resources>
+</document>

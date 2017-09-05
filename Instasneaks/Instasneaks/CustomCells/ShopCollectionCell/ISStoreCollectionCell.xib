@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ISStoreCollectionCell">
+            <rect key="frame" x="0.0" y="0.0" width="230" height="220"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="230" height="220"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uun-XP-4ND">
+                        <rect key="frame" x="0.0" y="0.0" width="230" height="220"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_custom" translatesAutoresizingMaskIntoConstraints="NO" id="zqT-Dz-3dT">
+                                <rect key="frame" x="17" y="122" width="90" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="1MK-Zh-Kpu"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_custom" translatesAutoresizingMaskIntoConstraints="NO" id="Wkq-AZ-BF6">
+                                <rect key="frame" x="122" y="122" width="90" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="8xy-db-jhZ"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_background_store1" translatesAutoresizingMaskIntoConstraints="NO" id="hDo-fK-sbA">
+                                <rect key="frame" x="10" y="4" width="210" height="110"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="110" id="JWi-bV-FoU"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Wkq-AZ-BF6" firstAttribute="height" secondItem="zqT-Dz-3dT" secondAttribute="height" id="HKA-GP-3kr"/>
+                            <constraint firstItem="Wkq-AZ-BF6" firstAttribute="width" secondItem="zqT-Dz-3dT" secondAttribute="width" id="PuU-Hh-yNF"/>
+                            <constraint firstItem="hDo-fK-sbA" firstAttribute="leading" secondItem="Uun-XP-4ND" secondAttribute="leading" constant="10" id="TRp-OQ-YfT"/>
+                            <constraint firstAttribute="trailing" secondItem="Wkq-AZ-BF6" secondAttribute="trailing" constant="18" id="UOU-Pj-saB"/>
+                            <constraint firstItem="zqT-Dz-3dT" firstAttribute="leading" secondItem="Uun-XP-4ND" secondAttribute="leading" constant="17" id="W8C-6g-H8B"/>
+                            <constraint firstItem="Wkq-AZ-BF6" firstAttribute="top" secondItem="hDo-fK-sbA" secondAttribute="bottom" constant="8" id="b71-WZ-Xt5"/>
+                            <constraint firstItem="hDo-fK-sbA" firstAttribute="top" secondItem="Uun-XP-4ND" secondAttribute="top" constant="4" id="gTT-15-H9l"/>
+                            <constraint firstAttribute="trailing" secondItem="hDo-fK-sbA" secondAttribute="trailing" constant="10" id="mNP-qH-Pff"/>
+                            <constraint firstItem="zqT-Dz-3dT" firstAttribute="top" secondItem="hDo-fK-sbA" secondAttribute="bottom" constant="8" id="n8E-9t-AFP"/>
+                            <constraint firstItem="Wkq-AZ-BF6" firstAttribute="leading" secondItem="zqT-Dz-3dT" secondAttribute="trailing" constant="15" id="tkr-Wh-149"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" red="0.89411764709999997" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="corner">
+                                <real key="value" value="2"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Uun-XP-4ND" secondAttribute="trailing" id="6CW-Oi-FcY"/>
+                <constraint firstItem="Uun-XP-4ND" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Cnm-pf-YBb"/>
+                <constraint firstAttribute="bottom" secondItem="Uun-XP-4ND" secondAttribute="bottom" id="P9Y-Yw-l8D"/>
+                <constraint firstItem="Uun-XP-4ND" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="vHx-iL-FFL"/>
+            </constraints>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="img_background_store1" width="151" height="91"/>
+        <image name="img_custom" width="127" height="127"/>
+    </resources>
+</document>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="NeoSansPro-Medium.ttf">
+            <string>NeoSansPro-Medium</string>
+        </mutableArray>
+        <mutableArray key="NeoSansPro.ttf">
+            <string>NeoSansPro-Regular</string>
+            <string>NeoSansPro-Regular</string>
+            <string>NeoSansPro-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="newsFeedCell" rowHeight="375" id="KGk-i7-Jjw" customClass="ISNewsFeedCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="375"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="374"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wER-bq-zzI">
+                        <rect key="frame" x="0.0" y="10" width="320" height="363"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nike Balance Grey Series" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Itg-3T-ef0">
+                                <rect key="frame" x="10" y="12" width="305" height="26"/>
+                                <fontDescription key="fontDescription" name="NeoSansPro-Medium" family="Neo Sans Pro" pointSize="15"/>
+                                <color key="textColor" white="0.19125" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="middleTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5oa-l4-st4">
+                                <rect key="frame" x="12" y="43" width="300" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="Df9-XS-Al2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="NeoSansPro-Regular" family="Neo Sans Pro" pointSize="15"/>
+                                <color key="textColor" white="0.45330078125000001" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image-not-available" translatesAutoresizingMaskIntoConstraints="NO" id="WZH-P1-wcm">
+                                <rect key="frame" x="0.0" y="83" width="320" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="jDi-BX-gqo"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="16 Minutes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YMP-cJ-Jhd">
+                                <rect key="frame" x="44" y="334" width="126" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="126" id="td3-Il-tWz"/>
+                                    <constraint firstAttribute="height" constant="21" id="zLr-jq-6Ve"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="NeoSansPro-Regular" family="Neo Sans Pro" pointSize="14"/>
+                                <color key="textColor" white="0.5" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="19z-mK-g51">
+                                <rect key="frame" x="256" y="333" width="56" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="56" id="Hb6-xB-j6w"/>
+                                    <constraint firstAttribute="height" constant="22" id="bd2-r6-Z8k"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="5" maxY="0.0"/>
+                                <state key="normal" image="ico_share"/>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1rT-fZ-ERe" customClass="YTPlayerView">
+                                <rect key="frame" x="0.0" y="83" width="320" height="240"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="2GB-SB-CiW"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nike" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qmv-qM-Sba">
+                                <rect key="frame" x="12" y="334" width="28" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="LQu-oA-hdD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="NeoSansPro-Regular" family="Neo Sans Pro" pointSize="14"/>
+                                <color key="textColor" white="0.5" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="19z-mK-g51" secondAttribute="bottom" constant="8" id="1wl-f5-wNN"/>
+                            <constraint firstItem="Qmv-qM-Sba" firstAttribute="leading" secondItem="wER-bq-zzI" secondAttribute="leading" constant="12" id="59w-rX-jQo"/>
+                            <constraint firstAttribute="bottom" secondItem="Qmv-qM-Sba" secondAttribute="bottom" constant="8" id="5G3-O4-P0l"/>
+                            <constraint firstItem="Itg-3T-ef0" firstAttribute="leading" secondItem="wER-bq-zzI" secondAttribute="leading" constant="10" id="6r4-lf-az3"/>
+                            <constraint firstAttribute="trailing" secondItem="19z-mK-g51" secondAttribute="trailing" constant="8" id="AyM-i7-nVk"/>
+                            <constraint firstItem="5oa-l4-st4" firstAttribute="leading" secondItem="wER-bq-zzI" secondAttribute="leading" constant="12" id="Cvg-U8-pSO"/>
+                            <constraint firstAttribute="trailing" secondItem="5oa-l4-st4" secondAttribute="trailing" constant="8" id="DM8-Hx-tBe"/>
+                            <constraint firstItem="WZH-P1-wcm" firstAttribute="leading" secondItem="wER-bq-zzI" secondAttribute="leading" id="Dbw-Es-qBg"/>
+                            <constraint firstAttribute="trailing" secondItem="1rT-fZ-ERe" secondAttribute="trailing" id="GGv-PV-Myo"/>
+                            <constraint firstAttribute="bottom" secondItem="YMP-cJ-Jhd" secondAttribute="bottom" constant="8" id="MA9-IE-96x"/>
+                            <constraint firstAttribute="trailing" secondItem="WZH-P1-wcm" secondAttribute="trailing" id="MIx-L4-iCI"/>
+                            <constraint firstAttribute="trailing" secondItem="Itg-3T-ef0" secondAttribute="trailing" constant="5" id="Sbp-Ne-1EV"/>
+                            <constraint firstItem="19z-mK-g51" firstAttribute="top" secondItem="WZH-P1-wcm" secondAttribute="bottom" constant="10" id="VpN-tt-XjK"/>
+                            <constraint firstItem="1rT-fZ-ERe" firstAttribute="top" secondItem="5oa-l4-st4" secondAttribute="bottom" constant="5" id="ecU-Yb-5B1"/>
+                            <constraint firstItem="Itg-3T-ef0" firstAttribute="top" secondItem="wER-bq-zzI" secondAttribute="top" constant="12" id="h5X-aj-qAk"/>
+                            <constraint firstItem="5oa-l4-st4" firstAttribute="top" secondItem="Itg-3T-ef0" secondAttribute="bottom" constant="5" id="j9c-R4-vv2"/>
+                            <constraint firstItem="YMP-cJ-Jhd" firstAttribute="leading" secondItem="Qmv-qM-Sba" secondAttribute="trailing" constant="4" id="lrI-bo-OC0"/>
+                            <constraint firstItem="1rT-fZ-ERe" firstAttribute="leading" secondItem="wER-bq-zzI" secondAttribute="leading" id="qas-px-EyM"/>
+                            <constraint firstItem="19z-mK-g51" firstAttribute="top" secondItem="1rT-fZ-ERe" secondAttribute="bottom" constant="10" id="tYq-UB-exx"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="corner">
+                                <real key="value" value="3"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K4q-w2-6mL">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="10"/>
+                        <color key="backgroundColor" red="0.93333333333333335" green="0.94901960784313721" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="10" id="Inc-IF-nFU"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="K4q-w2-6mL" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="257-CB-Ecl"/>
+                    <constraint firstAttribute="trailing" secondItem="K4q-w2-6mL" secondAttribute="trailing" id="Ge8-po-6pD"/>
+                    <constraint firstItem="K4q-w2-6mL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Hnb-Q4-Q0E"/>
+                    <constraint firstItem="wER-bq-zzI" firstAttribute="top" secondItem="K4q-w2-6mL" secondAttribute="bottom" id="Ifw-gX-79U"/>
+                    <constraint firstAttribute="trailing" secondItem="wER-bq-zzI" secondAttribute="trailing" id="V2A-rp-uqn"/>
+                    <constraint firstItem="wER-bq-zzI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="aVE-Ym-ojp"/>
+                    <constraint firstAttribute="bottom" secondItem="wER-bq-zzI" secondAttribute="bottom" constant="1" id="iuX-ER-hMZ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="button_share" destination="19z-mK-g51" id="jWU-eR-WVp"/>
+                <outlet property="imageView_newsFeed" destination="WZH-P1-wcm" id="xFn-1c-23k"/>
+                <outlet property="label_brandName" destination="Qmv-qM-Sba" id="s7p-1a-LRg"/>
+                <outlet property="label_newsDetail" destination="5oa-l4-st4" id="qre-K0-GnN"/>
+                <outlet property="label_newsTitle" destination="Itg-3T-ef0" id="xdx-hy-Fej"/>
+                <outlet property="label_videoTime" destination="YMP-cJ-Jhd" id="OaF-N6-qb8"/>
+                <outlet property="youTubeVideoView" destination="1rT-fZ-ERe" id="YKf-hI-nlF"/>
+            </connections>
+            <point key="canvasLocation" x="589" y="317.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ico_share" width="18" height="18"/>
+        <image name="image-not-available" width="150" height="150"/>
+    </resources>
+</document>

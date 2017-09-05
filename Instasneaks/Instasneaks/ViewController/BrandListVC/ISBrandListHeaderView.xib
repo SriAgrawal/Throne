@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="NeoSansPro.ttf">
+            <string>NeoSansPro-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ISBrandListHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="64"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yKD-kw-ghD">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="20"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="jG1-hG-zs9"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AjY-pH-kEZ">
+                    <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6xM-TU-heY">
+                            <rect key="frame" x="526" y="0.0" width="29" height="44"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="29" id="Om6-6L-Y3z"/>
+                                <constraint firstAttribute="height" constant="44" id="RQe-MP-Xi7"/>
+                            </constraints>
+                            <state key="normal" image="ico_money_bag">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vPg-zl-nxM">
+                            <rect key="frame" x="561" y="0.0" width="29" height="44"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="29" id="HP7-3f-7Ly"/>
+                                <constraint firstAttribute="height" constant="44" id="cWE-yW-P8r"/>
+                            </constraints>
+                            <state key="normal" image="ico_Search">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SHOP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e9i-WR-Qes">
+                            <rect key="frame" x="235" y="0.0" width="130" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="NLq-Uf-Wka"/>
+                                <constraint firstAttribute="width" constant="130" id="W8L-cf-VWl"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="NeoSansPro-Regular" family="Neo Sans Pro" pointSize="18"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L4u-lk-jXb">
+                            <rect key="frame" x="0.0" y="43" width="600" height="1"/>
+                            <color key="backgroundColor" white="0.79812499999999997" alpha="0.95121228449999995" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="2jl-oE-upY"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Qc-rq-939">
+                            <rect key="frame" x="10" y="0.0" width="60" height="44"/>
+                            <state key="normal" image="ico_back"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="vPg-zl-nxM" secondAttribute="trailing" constant="10" id="1ku-lF-JfU"/>
+                        <constraint firstItem="vPg-zl-nxM" firstAttribute="top" secondItem="AjY-pH-kEZ" secondAttribute="top" id="6CZ-6E-PSw"/>
+                        <constraint firstItem="L4u-lk-jXb" firstAttribute="leading" secondItem="AjY-pH-kEZ" secondAttribute="leading" id="EEn-2N-MKX"/>
+                        <constraint firstAttribute="height" constant="44" id="H7M-VI-37z"/>
+                        <constraint firstItem="vPg-zl-nxM" firstAttribute="leading" secondItem="6xM-TU-heY" secondAttribute="trailing" constant="6" id="Srj-U8-Df1"/>
+                        <constraint firstItem="6xM-TU-heY" firstAttribute="top" secondItem="AjY-pH-kEZ" secondAttribute="top" id="WFm-gO-i0C"/>
+                        <constraint firstItem="L4u-lk-jXb" firstAttribute="top" secondItem="AjY-pH-kEZ" secondAttribute="top" constant="43" id="YEu-TJ-idY"/>
+                        <constraint firstAttribute="trailing" secondItem="L4u-lk-jXb" secondAttribute="trailing" id="a0U-dl-BnC"/>
+                        <constraint firstItem="e9i-WR-Qes" firstAttribute="top" secondItem="AjY-pH-kEZ" secondAttribute="top" id="bLg-sZ-ouW"/>
+                        <constraint firstItem="e9i-WR-Qes" firstAttribute="centerX" secondItem="AjY-pH-kEZ" secondAttribute="centerX" id="zns-Bv-4fA"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="yKD-kw-ghD" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="4wZ-Hh-Rkx"/>
+                <constraint firstItem="yKD-kw-ghD" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="7iq-wR-l5Q"/>
+                <constraint firstItem="AjY-pH-kEZ" firstAttribute="top" secondItem="yKD-kw-ghD" secondAttribute="bottom" id="DFA-fG-WLz"/>
+                <constraint firstAttribute="trailing" secondItem="yKD-kw-ghD" secondAttribute="trailing" id="Qut-ES-h8p"/>
+                <constraint firstItem="AjY-pH-kEZ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="dO4-eh-y9Y"/>
+                <constraint firstAttribute="trailing" secondItem="AjY-pH-kEZ" secondAttribute="trailing" id="t3Z-ev-IN6"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="button_back" destination="1Qc-rq-939" id="fUT-nL-xsv"/>
+                <outlet property="button_search" destination="vPg-zl-nxM" id="Q2h-Y3-i32"/>
+                <outlet property="button_wallet" destination="6xM-TU-heY" id="2Rk-rk-0cX"/>
+                <outlet property="label_title" destination="e9i-WR-Qes" id="Poh-bk-lFC"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="ico_Search" width="20" height="20"/>
+        <image name="ico_back" width="20" height="16"/>
+        <image name="ico_money_bag" width="24" height="24"/>
+    </resources>
+</document>

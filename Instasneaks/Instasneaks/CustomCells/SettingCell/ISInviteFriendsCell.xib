@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="NeoSansPro.ttf">
+            <string>NeoSansPro-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="inviteFriendsCell" rowHeight="80" id="KGk-i7-Jjw" customClass="ISInviteFriendsCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="79"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ico_user" translatesAutoresizingMaskIntoConstraints="NO" id="Zto-oM-pw8">
+                        <rect key="frame" x="10" y="14" width="52" height="52"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="52" id="Bn5-q9-kUf"/>
+                            <constraint firstAttribute="height" constant="52" id="aHp-Yh-Z1D"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="corner">
+                                <real key="value" value="26"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alfred Casey" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dzi-7v-Sz3">
+                        <rect key="frame" x="100" y="19" width="170" height="42"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="42" id="d96-mZ-4w4"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="NeoSansPro-Regular" family="Neo Sans Pro" pointSize="16"/>
+                        <color key="textColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="07q-fd-kK6">
+                        <rect key="frame" x="0.0" y="78" width="320" height="1"/>
+                        <color key="backgroundColor" red="0.92549019607843142" green="0.92941176470588238" blue="0.92549019607843142" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="92i-3h-Ziq"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nab-Jo-rBp">
+                        <rect key="frame" x="272" y="23" width="34" height="34"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="34" id="aNj-U2-IPD"/>
+                            <constraint firstAttribute="height" constant="34" id="ldG-od-Y6s"/>
+                        </constraints>
+                        <state key="normal" image="ico_add_friends"/>
+                        <state key="selected" image="ico_Check"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Nab-Jo-rBp" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="1mO-jX-35f"/>
+                    <constraint firstAttribute="trailing" secondItem="dzi-7v-Sz3" secondAttribute="trailing" constant="50" id="6mu-Px-3zK"/>
+                    <constraint firstItem="07q-fd-kK6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="8Nu-8g-MnK"/>
+                    <constraint firstItem="dzi-7v-Sz3" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="EGD-Tv-O71"/>
+                    <constraint firstAttribute="bottom" secondItem="07q-fd-kK6" secondAttribute="bottom" id="QA5-47-Qty"/>
+                    <constraint firstItem="Zto-oM-pw8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="ba0-3I-PRQ"/>
+                    <constraint firstItem="Zto-oM-pw8" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="hLQ-nT-CyK"/>
+                    <constraint firstAttribute="trailing" secondItem="Nab-Jo-rBp" secondAttribute="trailing" constant="14" id="ib4-Yh-hoD"/>
+                    <constraint firstAttribute="trailing" secondItem="07q-fd-kK6" secondAttribute="trailing" id="qAi-lU-clu"/>
+                    <constraint firstItem="dzi-7v-Sz3" firstAttribute="leading" secondItem="Zto-oM-pw8" secondAttribute="trailing" constant="38" id="uob-IE-JzQ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="button_checkBox" destination="Nab-Jo-rBp" id="YgY-7m-vKH"/>
+                <outlet property="imageView_friendImage" destination="Zto-oM-pw8" id="nPz-s7-Wzl"/>
+                <outlet property="label_friendName" destination="dzi-7v-Sz3" id="i9n-os-87w"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ico_Check" width="20" height="15"/>
+        <image name="ico_add_friends" width="30" height="30"/>
+        <image name="ico_user" width="52" height="52"/>
+    </resources>
+</document>

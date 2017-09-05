@@ -1,0 +1,1 @@
+../../../HelpStack/Classes/Stacks/Email/HSGearEmail.h

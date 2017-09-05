@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="HelveticaNeue.ttc">
+            <string>HelveticaNeue-Medium</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ISShopByStore">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o8w-iO-dQi">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tss-nm-IqV">
+                            <rect key="frame" x="10" y="8" width="60" height="36"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="36" id="9IF-Yp-ToP"/>
+                                <constraint firstAttribute="width" constant="60" id="puV-kA-d56"/>
+                            </constraints>
+                            <state key="normal" image="ico_back">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shop By Store" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gxH-t6-ig9">
+                            <rect key="frame" x="220" y="4" width="159" height="36"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="159" id="H3e-iI-7qz"/>
+                                <constraint firstAttribute="height" constant="36" id="jhw-Bb-d7t"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="18"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aHg-Jn-2gf">
+                            <rect key="frame" x="0.0" y="43" width="600" height="1"/>
+                            <color key="backgroundColor" red="0.92941176469999998" green="0.94509803920000002" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="fE1-cF-NqW"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IUO-qq-J9g">
+                            <rect key="frame" x="525" y="7" width="60" height="36"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="60" id="chz-nk-5ga"/>
+                                <constraint firstAttribute="height" constant="36" id="fXU-dd-AcD"/>
+                            </constraints>
+                            <state key="normal" image="ico_Search">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="gxH-t6-ig9" firstAttribute="centerX" secondItem="o8w-iO-dQi" secondAttribute="centerX" id="4hG-eh-ew0"/>
+                        <constraint firstItem="aHg-Jn-2gf" firstAttribute="top" secondItem="IUO-qq-J9g" secondAttribute="bottom" id="7HO-70-CjQ"/>
+                        <constraint firstItem="gxH-t6-ig9" firstAttribute="top" secondItem="o8w-iO-dQi" secondAttribute="top" constant="4" id="9uQ-Sp-n30"/>
+                        <constraint firstAttribute="trailing" secondItem="aHg-Jn-2gf" secondAttribute="trailing" id="AM9-cP-gPF"/>
+                        <constraint firstAttribute="bottom" secondItem="aHg-Jn-2gf" secondAttribute="bottom" id="FqG-0n-0Gh"/>
+                        <constraint firstAttribute="height" constant="44" id="P1F-om-DK6"/>
+                        <constraint firstAttribute="trailing" secondItem="IUO-qq-J9g" secondAttribute="trailing" constant="15" id="Pt9-TN-PEM"/>
+                        <constraint firstItem="aHg-Jn-2gf" firstAttribute="leading" secondItem="o8w-iO-dQi" secondAttribute="leading" id="Ty8-cy-cyr"/>
+                        <constraint firstItem="tss-nm-IqV" firstAttribute="leading" secondItem="o8w-iO-dQi" secondAttribute="leading" constant="10" id="g4d-dv-uvz"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="me1-Qg-npY"/>
+                        <constraint firstItem="tss-nm-IqV" firstAttribute="top" secondItem="o8w-iO-dQi" secondAttribute="top" constant="8" id="moo-t0-cIH"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="o8w-iO-dQi" secondAttribute="trailing" id="4ru-vp-xWT"/>
+                <constraint firstItem="o8w-iO-dQi" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="LIQ-sO-o1q"/>
+                <constraint firstItem="o8w-iO-dQi" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="VaW-hg-ZKD"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="ico_Search" width="20" height="20"/>
+        <image name="ico_back" width="20" height="16"/>
+    </resources>
+</document>
